@@ -18,7 +18,7 @@ const PendingTasks = () => {
           console.log(res.data.data)
           setData(res.data.data)
       } catch(err){
-          console.log(err)
+          console.log(err) 
       }
     }
     fetch()
