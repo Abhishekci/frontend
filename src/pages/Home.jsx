@@ -9,7 +9,7 @@ const Home = () => {
         <Sidebar/>
       </div>
       <div className='border border-gray-500 rounded-xl p-4 w-5/6'>
-        <Outlet/>
+        <Outlet/> 
       </div>
     </div>
   )
