@@ -4,7 +4,7 @@ import Cards from '../components/Home/Cards';
 
 
 const PendingTasks = () => {
-  const [Data, setData] = useState();
+  const [Data, setData] = useState(); 
 
   const headers = {
     id:localStorage.getItem('id'),
@@ -17,8 +17,8 @@ const PendingTasks = () => {
           const res = await axios.get('http://localhost:1000/api/v2/get-incomp-tasks', {headers})
           console.log(res.data.data)
           setData(res.data.data)
-      } catch(err){
-          console.log(err) 
+      } catch(error){
+          console.log(error) 
       }
     }
     fetch()
