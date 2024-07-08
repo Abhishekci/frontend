@@ -29,7 +29,7 @@ const updateData = async () => {
         if(Data.title === "" || Data.desc === "" ) {
             alert("Please fill all the fields")
         } else {
-            const res = await axios.post(`http://localhost:1000/api/v2/update-tasks/${editData.id}`, Data, {headers});
+            const res = await axios.put(`http://localhost:1000/api/v2/update-tasks/${editData.id}`, Data, {headers});
             console.log(res)
             setData({title: "", desc: ""})
             setInputDiv('hidden')
@@ -45,7 +45,7 @@ const submit = async () => {
         if(Data.title === "" || Data.desc === "" ) {
             alert("Please fill all the fields")
         } else {
-            const res = await axios.put(`http://localhost:1000/api/v2/create-task`, Data, {headers});
+            const res = await axios.post(`http://localhost:1000/api/v2/create-task`, Data, {headers});
             console.log(res)
             setData({title: "", desc: ""})
             setInputDiv('hidden')

@@ -18,7 +18,7 @@ const App = () => {
   console.log(isLoggedIn)
   useEffect(()=>{
     if(localStorage.getItem("id") && localStorage.getItem("token")){
-      dispatch(authActions.login());
+      dispatch(authActions.login()); 
     } else if(!isLoggedIn){
       navigate('/signup')
     }

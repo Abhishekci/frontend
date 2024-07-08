@@ -28,6 +28,7 @@ const Cards = ({home, setInputDiv, data, seteditData}) => {
     const handleImp = async (id) => {
         try {
             const res = await axios.put(`http://localhost:1000/api/v2/update-imp-tasks/${id}`,
+                {},
                 {headers});
                 alert(res.data.message)
                 
