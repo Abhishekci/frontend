@@ -15,7 +15,7 @@ const Cards = ({home, setInputDiv, data, seteditData}) => {
 
     const handleComplete = async (id) => {
         try {
-            const res = await axios.put(`http://localhost:1000/api/v2/update-comp-tasks/${id}`,
+            const res = await axios.put(`https://expressbackend-one.vercel.app/api/v2/update-comp-tasks/${id}`,
                 {},
                 {headers});
                 alert(res.data.message)
@@ -27,7 +27,7 @@ const Cards = ({home, setInputDiv, data, seteditData}) => {
 
     const handleImp = async (id) => {
         try {
-            const res = await axios.put(`http://localhost:1000/api/v2/update-imp-tasks/${id}`,
+            const res = await axios.put(`https://expressbackend-one.vercel.app/api/v2/update-imp-tasks/${id}`,
                 {},
                 {headers});
                 alert(res.data.message)
@@ -39,7 +39,7 @@ const Cards = ({home, setInputDiv, data, seteditData}) => {
    
     const deteleTask = async (id) => {
         try {
-            const res = await axios.delete(`http://localhost:1000/api/v2/delete-tasks/${id}`,
+            const res = await axios.delete(`https://expressbackend-one.vercel.app/api/v2/delete-tasks/${id}`,
                 {headers});
                 alert(res.data.message)
                 

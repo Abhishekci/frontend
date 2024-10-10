@@ -24,7 +24,7 @@ const Login = () => {
             if(Data.username === "" || Data.password === "" ) {
                 alert("Please fill all the fields")
             } else {
-                const res = await axios.post("http://localhost:1000/api/v1/log-in", Data);
+                const res = await axios.post("https://expressbackend-one.vercel.app/api/v1/log-in", Data);
                 setData({username: "", email: "", password: ""})
                 // console.log(res)
                 localStorage.setItem("id", res.data.id);

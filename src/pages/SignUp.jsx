@@ -23,7 +23,7 @@ const submit = async () => {
         if(Data.username === "" || Data.email === "" || Data.password === "" ) {
             alert("Please fill all the fields")
         } else {
-            const res = await axios.post("http://localhost:1000/api/v1/sign-in", Data);
+            const res = await axios.post("https://expressbackend-one.vercel.app/api/v1/sign-in", Data);
             console.log(res)
             setData({username: "", email: "", password: ""})
             history('/login')

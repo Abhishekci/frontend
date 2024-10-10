@@ -54,7 +54,7 @@ export const Sidebar = () => {
     useEffect(() => {
       const fetch = async ()=>{
         try {
-            const res = await axios.get('http://localhost:1000/api/v2/get-tasks', {headers})
+            const res = await axios.get('https://expressbackend-one.vercel.app/api/v2/get-tasks', {headers})
             console.log(res.data.data)
             setData(res.data.data)
         } catch(err){
