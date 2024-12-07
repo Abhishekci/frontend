@@ -51,7 +51,7 @@ const Login = () => {
       placeholder='Password'
       name='password' onChange={change} value={Data.password} required />
       <div className='w-full flex items-center justify-between'>
-        <button className='bg-blue-400 font-semibold px-3 py-2 rounded' onClick={submit}>Login</button>
+        <button className='bg-blue-400 font-semibold px-3 py-2 rounded' onClick={submit}>Login </button>
         <Link to='/signup' className='text-gray-400 hover:text-gray-200'> Not Having an account ? SignUp! </Link>
       </div>
     </div> 
